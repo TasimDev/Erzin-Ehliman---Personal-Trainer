@@ -21,10 +21,23 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <ul className="nav-menu flex-center">
-                    <li className="nav-link"><Link href='/'>Начало</Link></li>
+                    <li className="nav-link active"><Link href='/'>Начало</Link></li>
                     <li className="nav-link"><Link href='/'>Персонални Тренировки</Link></li>
                     <li className="nav-link"><Link href='/'>Свържете се с мен</Link></li>
                     <li className="nav-link"><Link href='/'>Еркин Етем</Link></li>
+                </ul>
+                <div className="mobile-menu-btn">
+                    <span className="line"></span>
+                    <span className="line"></span>
+                    <span className="line"></span>
+                </div>
+                <ul className="nav-menu-mobile ">
+
+                    <li className="nav-link active"><Link href='/'>Начало</Link></li>
+                    <li className="nav-link"><Link href='/'>Персонални Тренировки</Link></li>
+                    <li className="nav-link"><Link href='/'>Свържете се с мен</Link></li>
+                    <li className="nav-link"><Link href='/'>Еркин Етем</Link></li>
+
                 </ul>
             </div>
         </nav>

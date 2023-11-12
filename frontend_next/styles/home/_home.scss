@@ -21,6 +21,11 @@
         align-items: end;
         z-index: 3;
 
+        @media screen and (max-width: 700px) {
+            align-items: center;
+            justify-content: center;
+        }
+
         .home-heading {
 
             padding: 0 .6rem;
@@ -32,6 +37,21 @@
                 line-height: 7rem;
                 text-transform: uppercase;
                 font-family: var(--Russo);
+
+                @media screen and (max-width: 1100px) {
+                    font-size: 3.6rem;
+                }
+
+                @media screen and (max-width: 700px) {
+                    font-size: 3rem;
+                    text-align: center;
+                    line-height: 4rem;
+                }
+
+                @media screen and (max-width: 600px) {
+                    font-size: 2rem;
+                    line-height: normal;
+                }
             }
 
             span {
@@ -41,12 +61,25 @@
                 font-size: 1.6rem;
                 margin-top: 1em;
                 font-weight: 500;
+
+                @media screen and (max-width: 700px) {
+                    text-align: center;
+                }
+
+                @media screen and (max-width: 600px) {
+                    font-size: 1rem;
+                }
             }
         }
 
         .btn-home {
             margin-top: 2em;
             margin-right: .6rem;
+
+            @media screen and (max-width: 600px) {
+                font-size: 1rem;
+                padding: 1rem 2rem;
+            }
         }
 
 

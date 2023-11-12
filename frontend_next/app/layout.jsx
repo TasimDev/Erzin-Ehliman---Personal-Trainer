@@ -1,5 +1,4 @@
 
-import { Footer, Navbar } from '@components';
 
 import '@styles/style.css';
 
@@ -10,16 +9,16 @@ export const metadata = {
 
 const RootLayout = ({ children }) => {
     return (
-        <html>
+        <html lang='bg'>
             <head>
-                <link rel="icon" href="./assets/favicon.png" sizes='80x80' />
+                <link rel="icon" href="./assets/favicon.png" sizes='40x40' />
             </head>
             <body>
-                <Navbar />
+              
                 <div className="app">
                     {children}
                 </div>
-                <Footer />
+              
             </body>
         </html>
     )

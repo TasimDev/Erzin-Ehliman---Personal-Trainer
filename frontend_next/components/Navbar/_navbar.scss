@@ -6,18 +6,130 @@
     left: 0;
     z-index: 6;
 
-    .nav-menu {
+    .nav-menu,
+    .nav-menu-mobile {
         gap: 1.6em;
+
+        @media screen and (max-width: 790px) {
+            display: none;
+        }
 
         .nav-link {
             padding: .6rem 0;
-
+            position: relative;
 
             a {
                 text-transform: uppercase;
                 font-weight: 500;
-                color: #fff;
+                color: #ffffff98;
+                transition: all .3s ease-in-out;
+            }
+
+            &::after {
+                content: '';
+                width: 0;
+                height: 2px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: #cdffd8;
+                transition: all .3s ease-in-out;
+            }
+
+            &:hover {
+                a {
+                    color: #fff;
+                }
+
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            &.active {
+                &::after {
+                    opacity: 0;
+                }
+
+                a {
+                    color: #94b9ff;
+                }
             }
         }
     }
+
+    .mobile-menu-btn {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        display: none;
+
+        span {
+            width: 100%;
+            height: 2px;
+            background: #fff;
+            border-radius: 15px;
+            transition: all .3s ease-in-out;
+        }
+
+        &.active {
+            span {
+                height: 3px;
+            }
+
+            span:nth-child(2) {
+                display: none;
+            }
+
+            span:nth-child(1) {
+                transform: rotate(-48deg) translateY(6px);
+            }
+
+            span:nth-child(3) {
+
+                transform: rotate(48deg) translateY(-8px);
+            }
+        }
+
+        @media screen and (max-width: 790px) {
+            display: flex;
+        }
+
+    }
+
+    .nav-menu-mobile {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 70%;
+        height: 200%;
+        background: black;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 80em;
+        transition: all .3s ease-in-out;
+
+        li {
+            margin-top: 2em;
+
+            a {
+                font-size: 1.2rem;
+
+            }
+        }
+
+        &.active {
+            right: 0;
+        }
+
+        @media screen and (max-width: 790px) {
+            display: flex;
+        }
+    }
+
 }
