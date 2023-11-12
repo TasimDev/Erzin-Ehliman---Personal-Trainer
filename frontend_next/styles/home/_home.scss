@@ -1,0 +1,54 @@
+/*==================Home=================*/
+.home {
+    width: 100vw;
+    height: 100vh;
+    background: url('/assets/home-section-bg.jpg');
+    background-position: center;
+    position: relative;
+
+    .home-bg-blur {
+        position: absolute;
+        right: 0;
+        width: 60%;
+        height: 100%;
+        background: linear-gradient(-90deg, rgb(0, 0, 0) 25%, rgba(9, 88, 121, 0) 85%);
+        z-index: 0;
+    }
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+        align-items: end;
+        z-index: 3;
+
+        .home-heading {
+
+            padding: 0 .6rem;
+
+            h1 {
+                text-align: right;
+                font-size: 4.6rem;
+                color: #fff;
+                line-height: 7rem;
+                text-transform: uppercase;
+                font-family: var(--Russo);
+            }
+
+            span {
+                display: block;
+                color: #fff;
+                text-align: right;
+                font-size: 1.6rem;
+                margin-top: 1em;
+                font-weight: 500;
+            }
+        }
+
+        .btn-home {
+            margin-top: 2em;
+            margin-right: .6rem;
+        }
+
+
+    }
+}
