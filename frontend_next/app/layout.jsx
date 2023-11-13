@@ -9,7 +9,7 @@ export const metadata = {
 
 const RootLayout = ({ children }) => {
     return (
-        <html lang='bg'>
+        <html lang='en'>
             <head>
                 <link rel="icon" href="./assets/favicon.png" sizes='40x40' />
             </head>

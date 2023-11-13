@@ -64,8 +64,10 @@
         cursor: pointer;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 8px;
         display: none;
+        transition: all .3s ease-in-out;
 
         span {
             width: 100%;
@@ -76,22 +78,13 @@
         }
 
         &.active {
-            span {
-                height: 3px;
-            }
+            gap: 0;
 
             span:nth-child(2) {
                 display: none;
             }
 
-            span:nth-child(1) {
-                transform: rotate(-48deg) translateY(6px);
-            }
 
-            span:nth-child(3) {
-
-                transform: rotate(48deg) translateY(-8px);
-            }
         }
 
         @media screen and (max-width: 790px) {

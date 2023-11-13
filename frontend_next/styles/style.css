@@ -202,8 +202,10 @@ a {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 8px;
   display: none;
+  transition: all 0.3s ease-in-out;
 }
 .nav .mobile-menu-btn span {
   width: 100%;
@@ -212,17 +214,11 @@ a {
   border-radius: 15px;
   transition: all 0.3s ease-in-out;
 }
-.nav .mobile-menu-btn.active span {
-  height: 3px;
+.nav .mobile-menu-btn.active {
+  gap: 0;
 }
 .nav .mobile-menu-btn.active span:nth-child(2) {
   display: none;
-}
-.nav .mobile-menu-btn.active span:nth-child(1) {
-  transform: rotate(-48deg) translateY(6px);
-}
-.nav .mobile-menu-btn.active span:nth-child(3) {
-  transform: rotate(48deg) translateY(-8px);
 }
 @media screen and (max-width: 790px) {
   .nav .mobile-menu-btn {
