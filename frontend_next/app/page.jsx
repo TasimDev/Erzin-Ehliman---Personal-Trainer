@@ -1,27 +1,21 @@
 import { Footer, Navbar } from "@components";
-import Link from "next/link";
+import Hero from "@components/Hero/Hero";
+import Info from "@components/Info/Info";
+import Quote from "@components/Quote/Quote";
 
 const Home = () => {
+
+    const headerVariants = {
+        hidden: { x: '100%' },
+        visible: { x: 0 },
+    };
+
     return (
         <main className="main">
             <Navbar />
-            <section className="home flex-center ">
-                <div className="home-bg-blur"></div>
-                <div className="container flex-end">
-                    <div className="home-heading">
-                        <h1>Персонален подход <br />Вдъхновяващи резултати <br /></h1>
-                        <span>Еркин Етем - вашият персонален треньор</span>
-                    </div>
-
-                    <Link href='#' className="btn-primary btn-home">
-                        <span> </span>
-                        <span> </span>
-                        <span> </span>
-                        <span> </span>
-                        Започни сега
-                    </Link>
-                </div>
-            </section>
+            <Hero />
+            <Quote />
+            <Info />
             <Footer />
         </main>
     )

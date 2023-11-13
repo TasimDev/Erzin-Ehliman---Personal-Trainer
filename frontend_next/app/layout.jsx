@@ -1,5 +1,6 @@
 
 
+
 import '@styles/style.css';
 
 export const metadata = {
@@ -14,11 +15,11 @@ const RootLayout = ({ children }) => {
                 <link rel="icon" href="./assets/favicon.png" sizes='40x40' />
             </head>
             <body>
-              
+
                 <div className="app">
                     {children}
                 </div>
-              
+
             </body>
         </html>
     )

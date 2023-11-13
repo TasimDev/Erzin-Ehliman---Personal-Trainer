@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useState, useEffect } from "react"
-
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,10 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     };
     return (
-        <nav className="nav ">
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="nav ">
             <div className="container flex-between">
                 <div className="nav-logo">
                     <Link href='/'>
@@ -45,7 +48,7 @@ const Navbar = () => {
 
                 </ul>
             </div>
-        </nav>
+        </motion.div >
     )
 }
 
