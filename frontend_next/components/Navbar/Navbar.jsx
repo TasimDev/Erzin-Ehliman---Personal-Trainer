@@ -32,7 +32,7 @@ const Navbar = () => {
                     <li className="nav-link active"><Link href='/'>Начало</Link></li>
                     <li className="nav-link"><Link href='/'>Персонални Тренировки</Link></li>
                     <li className="nav-link"><Link href='/'>Свържете се с мен</Link></li>
-                    <li className="nav-link"><Link href='/'>Еркин Етем</Link></li>
+                    <li className="nav-link"><Link href='#about'>Еркин Етем</Link></li>
                 </ul>
                 <div className={`mobile-menu-btn ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
                     <span className="line"></span>
@@ -44,7 +44,7 @@ const Navbar = () => {
                     <li className="nav-link active"><Link href='/' onClick={toggleMenu}>Начало</Link></li>
                     <li className="nav-link"><Link href='/' onClick={toggleMenu}>Персонални Тренировки</Link></li>
                     <li className="nav-link"><Link href='/' onClick={toggleMenu}>Свържете се с мен</Link></li>
-                    <li className="nav-link"><Link href='/' onClick={toggleMenu}>Еркин Етем</Link></li>
+                    <li className="nav-link"><Link href='#about' onClick={toggleMenu}>Еркин Етем</Link></li>
 
                 </ul>
             </div>
