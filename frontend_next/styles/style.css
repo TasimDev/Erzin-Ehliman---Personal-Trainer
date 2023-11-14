@@ -468,7 +468,7 @@ a {
 
 /*================About===============*/
 #about {
-  margin: 5rem 0;
+  margin-top: 5rem;
 }
 #about .title {
   display: flex;
