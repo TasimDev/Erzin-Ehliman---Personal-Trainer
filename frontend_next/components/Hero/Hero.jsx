@@ -18,7 +18,7 @@ const Hero = () => {
                 animate="visible"
                 variants={headerVariants}
                 transition={{ duration: 2 }}
-                className="container flex-end">
+                className="container">
                 <div className="home-heading">
                     <h1>Персонален подход <br />Вдъхновяващи резултати <br /></h1>
                     <span>Еркин Етем - вашият персонален треньор</span>
