@@ -506,4 +506,59 @@ a {
   text-align: justify;
   line-height: 1.6em;
   color: gray;
+}
+
+/*============Contact=========*/
+#contact {
+  margin: 5rem 0rem;
+}
+#contact .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  #contact .container {
+    flex-direction: column;
+  }
+  #contact .container .title {
+    margin-bottom: 6rem;
+  }
+}
+#contact .container .title {
+  font-size: 1.6rem;
+  font-family: var(--Russo);
+}
+#contact .container ul {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-gap: 20px;
+  gap: 6rem;
+}
+#contact .container ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+#contact .container ul li .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+#contact .container ul li p {
+  color: rgb(150, 150, 150);
+}
+#contact .container ul li a {
+  width: 100%;
+  padding: 0.6rem 1.4rem;
+  background: black;
+  color: #fff;
+}
+#contact .container ul li.whatsapp-link a {
+  background: #25D366;
 }/*# sourceMappingURL=style.css.map */
