@@ -41,7 +41,7 @@ const Calcolator = () => {
               </div>
               </div>
               </div>
-              <div className="form-section">
+              <div className="form-section-option">
               <div className="form-input">
               <label>Тренировачно ниво: </label>
                    <select value="lifebasis">
