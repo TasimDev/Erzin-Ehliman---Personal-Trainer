@@ -631,30 +631,30 @@ a {
     width: 100%;
   }
 }
-#calcolator .container .calcolator-side form {
+#calcolator .container .calcolator-side .form {
   width: 80%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 @media screen and (max-width: 600px) {
-  #calcolator .container .calcolator-side form {
+  #calcolator .container .calcolator-side .form {
     width: 100%;
   }
 }
-#calcolator .container .calcolator-side form input {
+#calcolator .container .calcolator-side .form input {
   padding: 0.6rem 1rem;
   font-size: 1rem;
   border: 2px solid rgb(226, 226, 226);
 }
-#calcolator .container .calcolator-side form input::-webkit-inner-spin-button {
+#calcolator .container .calcolator-side .form input::-webkit-inner-spin-button {
   -webkit-appearance: none;
           appearance: none;
 }
-#calcolator .container .calcolator-side form input:focus {
+#calcolator .container .calcolator-side .form input:focus {
   outline: 2px solid rgb(0, 255, 213);
 }
-#calcolator .container .calcolator-side form input[type=submit] {
+#calcolator .container .calcolator-side .form input[type=submit] {
   background: rgb(0, 255, 213);
   border: none;
   cursor: pointer;
@@ -662,45 +662,45 @@ a {
   text-transform: uppercase;
   color: #fff;
 }
-#calcolator .container .calcolator-side form .form-section {
+#calcolator .container .calcolator-side .form .form-section {
   display: flex;
   align-items: center;
   gap: 1.2rem;
 }
-#calcolator .container .calcolator-side form .form-section .form-input {
+#calcolator .container .calcolator-side .form .form-section .form-input {
   width: 50%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-#calcolator .container .calcolator-side form .form-section .form-input label.label-title {
+#calcolator .container .calcolator-side .form .form-section .form-input label.label-title {
   font-size: 1.4rem;
   padding-left: 12px;
   border-left: 2px solid black;
 }
-#calcolator .container .calcolator-side form .form-section .form-input .radio-container {
+#calcolator .container .calcolator-side .form .form-section .form-input .radio-container {
   display: flex;
   gap: 1.2rem;
 }
-#calcolator .container .calcolator-side form .form-section .form-input .radio-container .radio-div {
+#calcolator .container .calcolator-side .form .form-section .form-input .radio-container .radio-div {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.6rem;
   font-size: 1.2rem;
 }
-#calcolator .container .calcolator-side form .form-section-option {
+#calcolator .container .calcolator-side .form .form-section-option {
   width: 100%;
 }
-#calcolator .container .calcolator-side form .form-section-option .form-input {
+#calcolator .container .calcolator-side .form .form-section-option .form-input {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
 }
-#calcolator .container .calcolator-side form .form-section-option label {
+#calcolator .container .calcolator-side .form .form-section-option label {
   font-size: 1.4rem;
 }
-#calcolator .container .calcolator-side form .form-section-option select {
+#calcolator .container .calcolator-side .form .form-section-option select {
   background: none;
   border: 1px solid gray;
   font-size: 1.1rem;
