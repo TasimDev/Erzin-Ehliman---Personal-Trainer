@@ -6,7 +6,7 @@ const Calcolator = () => {
     <section id="calcolator">
        <div className="title">
           <h2>Калориен Калколатор</h2>
-          <span className="line"></span>
+        
         </div>
       <div className="container">
        
@@ -41,11 +41,37 @@ const Calcolator = () => {
               </div>
               </div>
               </div>
+              <div className="form-section">
+              <div className="form-input">
+              <label>Тренировачно ниво: </label>
+                   <select value="lifebasis">
+                       <option value="lifebasis">Базиран на начина на живот</option>
+                        <option value="active">Активен (2-3 седмично)</option>
+                       <option value="normalactive">Нормална активност (4 - 5)</option>
+                      <option value="verry">Много Активен (6 дена седмично)</option>
+                  </select>
+              </div>
+              </div>
               <input type="submit" value="Изчисли" />
             </form>
         </div>
-        <div className="image-side">
-           <img src="assets/anastase-maragos-7kEpUPB8vNk-unsplash.jpg" alt="calc-image" width="100%" height="100%"/>
+        <div className="line-div"></div>
+        <div className="result-side">
+          <div className="result-title"><span>Резултат</span></div>
+            <div className="result-container">
+                  <div className="result-item">
+                    <span className='result-item-title'>Поддържане на тегло: </span>
+                    <div className="result">0 <br /><span>калории/ден</span></div>
+                  </div>
+                  <div className="result-item">
+                    <span className='result-item-title'>Покачване на тегло: </span>
+                    <div className="result">0 <br /><span>калории/ден</span></div>
+                  </div>
+                  <div className="result-item">
+                    <span className='result-item-title'>Плавно отслабване: </span>
+                    <div className="result">0 <br /><span>калории/ден</span></div>
+                  </div>
+            </div>
         </div>
       </div>
     </section>
