@@ -1,0 +1,112 @@
+/*==============Calculator================*/
+#calcolator{
+    margin: 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    .title{
+
+        font-size: 2rem;
+        font-family: var(--Russo);
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.3rem;
+        span{
+            width: 350px;
+            height: 3px;
+            background: rgb(0, 255, 213);
+        }
+        @media screen and (max-width: 600px) {
+            font-size: 1.8rem;
+        }
+
+    }
+    .container{
+        display: flex;
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+        }
+        .calcolator-side{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media screen and (max-width: 800px){
+                width: 100%;
+            }
+            form{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+               
+                input{
+                    padding: .6rem 1rem;
+                    font-size: 1rem;
+                    border: 2px solid rgb(226, 226, 226);
+                    &::-webkit-inner-spin-button{
+                        appearance: none;
+                    }
+                    &:focus{
+                        
+                        outline: 2px solid rgb(0, 255, 213);
+                    }
+                    &[type=submit]{
+                        background: rgb(0, 255, 213);
+                        border: none;
+                        cursor: pointer;
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                        color: #fff;
+                        
+                    }
+                }
+                .form-section{
+                    display: flex;
+                
+                   align-items: center;
+                   gap: 1.2rem;
+                   .form-input{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                gap: 1rem;
+                label.label-title{
+                    font-size: 1.4rem;
+                    padding-left: 12px;
+                    border-left: 2px solid black;
+                }
+               
+                .radio-container{
+                    display: flex;
+                    gap: 1.2rem;
+                    .radio-div{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: .6rem;
+                        font-size: 1.2rem;
+                    }
+                }
+                   }
+                }
+                
+            }
+        }
+        .image-side{
+            width: 50%;
+            overflow: hidden;
+            @media screen and (max-width: 800px){
+                width: 100%;
+            }
+        }
+    }
+}
