@@ -1,5 +1,6 @@
 import { Footer, Navbar } from "@components";
 import About from "@components/About/About";
+import Clients from "@components/Clients/Clients";
 import Contact from "@components/Contact/Contact";
 import Hero from "@components/Hero/Hero";
 import Info from "@components/Info/Info";
@@ -16,6 +17,7 @@ const Home = () => {
             <Info />
             <About />
             <Contact/>
+            <Clients/>
             <Footer />
         </main>
     )

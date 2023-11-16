@@ -562,4 +562,12 @@ a {
 }
 #contact .container ul li.whatsapp-link a {
   background: #25D366;
+}
+
+/*==========Footer===========*/
+#footer {
+  padding: 6rem 0rem;
+}
+#footer .container .title {
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
