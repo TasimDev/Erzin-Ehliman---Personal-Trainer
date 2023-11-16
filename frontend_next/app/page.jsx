@@ -4,6 +4,7 @@ import Clients from "@components/Clients/Clients";
 import Contact from "@components/Contact/Contact";
 import Hero from "@components/Hero/Hero";
 import Info from "@components/Info/Info";
+import Packages from "@components/Packages/Packages";
 import Quote from "@components/Quote/Quote";
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
             <About />
             <Contact/>
             <Clients/>
+            <Packages/>
             <Footer />
         </main>
     )

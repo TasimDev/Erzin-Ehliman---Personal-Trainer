@@ -2,7 +2,13 @@ import React from 'react'
 
 const Clients = () => {
   return (
-    <div>Clients</div>
+    <section id="clients">
+      <ul className="clients-items">
+        <li className='clients-item'>
+          
+        </li>
+      </ul>
+    </section>
   )
 }
 
