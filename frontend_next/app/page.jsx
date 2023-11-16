@@ -1,5 +1,6 @@
 import { Footer, Navbar } from "@components";
 import About from "@components/About/About";
+import Calcolator from "@components/Calcolator/Calcolator";
 import Clients from "@components/Clients/Clients";
 import Contact from "@components/Contact/Contact";
 import Hero from "@components/Hero/Hero";
@@ -19,6 +20,7 @@ const Home = () => {
             <About />
             <Contact/>
             <Clients/>
+            <Calcolator/>
             <Packages/>
             <Footer />
         </main>
