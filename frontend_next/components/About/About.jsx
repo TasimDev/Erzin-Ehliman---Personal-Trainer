@@ -13,7 +13,7 @@ const About = () => {
                     </div>
 
                 </div>
-                <video loop controls autoPlay src="assets/erkin_etem.mp4" width={"100%"} height={"100%"} style={{ borderRadius: '25px' }}>
+                <video loop controls autoPlay width={"100%"} height={"100%"} style={{ borderRadius: '25px' }}>
                     <source src='assets/erkin_etem.mp4' />
                     Браузарът не поддържа видео
                 </video>
