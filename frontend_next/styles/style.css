@@ -598,7 +598,10 @@ a {
 }
 @media screen and (max-width: 600px) {
   #calcolator .title {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
+  }
+  #calcolator .title h2 {
+    text-align: center;
   }
 }
 #calcolator .container {
