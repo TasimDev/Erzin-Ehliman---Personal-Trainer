@@ -589,6 +589,97 @@ a {
 }
 
 /*=======================clients========================*/
+#clients {
+  margin: 10rem 0rem;
+  padding: 3rem 0rem;
+  background: #F7F8F7;
+}
+#clients .title {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+#clients .clients-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+#clients .clients-items .client-item {
+  position: relative;
+  width: 40%;
+  border-radius: 20px;
+  height: 100%;
+  overflow: visible;
+}
+@media screen and (max-width: 1500px) {
+  #clients .clients-items .client-item {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #clients .clients-items .client-item {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 790px) {
+  #clients .clients-items .client-item {
+    width: 96%;
+  }
+}
+#clients .clients-items .client-item img {
+  width: 100%;
+  border-radius: 18px;
+}
+#clients .clients-items .client-item:hover .info {
+  opacity: 0;
+}
+#clients .clients-items .client-item .info {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  -webkit-backdrop-filter: blur(13px);
+          backdrop-filter: blur(13px);
+  width: 100%;
+  padding: 1.3rem 0rem;
+  display: flex;
+  flex-direction: column;
+  grid-area: 3px;
+  transition: all 0.3s ease-in-out;
+  cursor: default;
+  gap: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  #clients .clients-items .client-item .info {
+    font-size: 1.4rem;
+    padding: 0.1rem;
+  }
+}
+#clients .clients-items .client-item .info .name {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+  color: aquamarine;
+}
+#clients .clients-items .client-item .info .tesominal {
+  width: 70%;
+  font-size: 0.6em;
+  color: #fff;
+}
+#clients .clients-items .client-item .info .transformation {
+  color: rgba(255, 255, 255, 0.774);
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
 /*==========Footer===========*/
 #footer {
   padding: 6rem 0rem;
