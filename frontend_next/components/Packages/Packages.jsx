@@ -10,7 +10,7 @@ const Packages = () => {
         <div className="package-container">
           <div className="package package-first">
             <div className="package-title">
-              <h3>Begginer</h3>
+              <h3>Групова тренировка</h3>
               <span>Започни първата крачка към целите си</span>
             </div>
             <ul>

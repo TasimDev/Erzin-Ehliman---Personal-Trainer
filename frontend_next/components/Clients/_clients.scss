@@ -9,6 +9,15 @@
         font-size: 2rem;
         text-align: center;
         margin-bottom: 3rem;
+        text-transform: uppercase;
+
+        h2 {
+            font-weight: 800;
+        }
+
+        @media screen and (max-width: 790px) {
+            font-size: 1.6rem;
+        }
     }
 
     .clients-items {
@@ -57,7 +66,7 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 font-size: 2rem;
-           
+
                 backdrop-filter: blur(13px);
                 width: 100%;
                 padding: 1.3rem 0rem;
