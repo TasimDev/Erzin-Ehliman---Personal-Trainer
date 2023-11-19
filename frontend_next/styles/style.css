@@ -700,6 +700,7 @@ a {
 /*==============Calculator================*/
 #calcolator {
   margin: 3rem 0rem;
+  padding: 7rem 0rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -884,4 +885,139 @@ a {
   font-size: 1rem;
   color: rgb(178, 178, 178);
   font-weight: 300;
+}
+
+/*==================Packages=================*/
+#packages {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+#packages .package {
+  padding: 5rem 0rem;
+}
+#packages .package.online-coatching {
+  background: rgb(8, 17, 34);
+  color: #fff;
+}
+#packages .package.online-coatching .container .package-container .package-card a {
+  color: #fff;
+}
+#packages .package .title {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 1.2rem;
+}
+#packages .package .title h2 {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  font-family: var(--Russo);
+  margin-bottom: 1rem;
+}
+#packages .package .title .important {
+  font-size: 1.2em;
+  color: rgb(0, 225, 255);
+}
+#packages .package .title p {
+  color: gray;
+}
+#packages .package .title p span {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #fff;
+}
+#packages .package .title p span.first {
+  color: black;
+}
+#packages .package .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  overflow: visible;
+}
+#packages .package .container .package-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  overflow: visible;
+}
+#packages .package .container .package-container .package-card {
+  width: 28.5714285714%;
+  text-align: center;
+  padding: 3.2rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 25px;
+  cursor: default;
+  box-shadow: 1px 0px 50px -11px rgba(0, 0, 0, 0.75);
+}
+#packages .package .container .package-container .package-card .package-title {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+#packages .package .container .package-container .package-card .package-title h3 {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--Russo);
+}
+#packages .package .container .package-container .package-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+#packages .package .container .package-container .package-card ul span {
+  font-weight: 500;
+}
+#packages .package .container .package-container .package-card ul li {
+  opacity: 0.7;
+  text-align: justify;
+}
+#packages .package .container .package-container .package-card .price {
+  font-size: 2rem;
+  font-family: var(--Russo);
+}
+#packages .package .container .package-container .package-card a {
+  font-size: 1.2rem;
+  color: black;
+  text-transform: uppercase;
+}
+#packages .package .container .package-container .package-card.package-third {
+  background: rgb(0, 203, 156);
+  color: #fff;
+}
+#packages .package .container .package-container .package-card.package-third a {
+  color: #fff;
+}
+#packages .package .container .package-container .package-card.package-second {
+  background: rgb(0, 171, 162);
+  color: #ffffff;
+}
+#packages .package .container .package-container .package-card.package-second a {
+  color: #fff;
+}
+#packages .package .container .package-container .package-card.package-first {
+  background: rgb(8, 17, 34);
+  color: #fff;
+}
+#packages .package .container .package-container .package-card.package-first a {
+  color: #fff;
+}
+#packages .package .container .package-container .package-card.package-first-online {
+  background: #CBD6DC;
+  color: rgb(0, 0, 0);
+}
+#packages .package .container .package-container .package-card.package-first-online a {
+  color: rgb(0, 0, 0);
 }/*# sourceMappingURL=style.css.map */
