@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import React from 'react'
-import { FaWhatsapp , FaInstagram, FaFacebook} from 'react-icons/fa';
+import { FaWhatsapp, FaInstagram, FaFacebook } from 'react-icons/fa';
 import { MdMailOutline } from 'react-icons/md';
 
 const Contact = () => {
-  
+
   return (
     <section id="contact">
       <div className="container">
@@ -13,9 +13,9 @@ const Contact = () => {
         </div>
         <ul>
           <li className='whatsapp-link'>
-        
+
             <div className="icon">
-            <FaWhatsapp size={24}/>
+              <FaWhatsapp size={24} />
               <span>WhatsApp</span>
             </div>
             <p>
@@ -25,34 +25,34 @@ const Contact = () => {
           </li>
           <li className='email'>
             <div className="icon">
-              <MdMailOutline size={24}/>
+              <MdMailOutline size={24} />
               <span>Email</span>
             </div>
             <p>
               Бъдете свободни да ми изпращате съобщения
             </p>
-            <Link href="#">Mail</Link>
+            <Link href="mailto:erkinetem7@gmail.com">Mail</Link>
           </li>
           <li className='instagram'>
             <div className="icon">
-              <FaInstagram size={24}/>
+              <FaInstagram size={24} />
               <span>Instagram</span>
             </div>
             <p>
-             Оставете ми съобщение
+              Оставете ми съобщение
             </p>
-            <Link href="#">Instagram</Link>
+            <Link href="https://www.instagram.com/erkin.etem/" target='_blank'>Instagram</Link>
           </li>
           <li className='facebook'>
-           
+
             <div className="icon">
-            <FaFacebook size={24}/>
+              <FaFacebook size={24} />
               <span>Facebook</span>
             </div>
             <p>
               Последвайте ме
             </p>
-            <Link href="#">Facebook</Link>
+            <Link href="https://www.facebook.com/profile.php?id=100076191046826" target='_blank'>Facebook</Link>
           </li>
         </ul>
       </div>
