@@ -1025,6 +1025,7 @@ a {
   cursor: default;
   scroll-snap-type: none center;
   box-shadow: 1px 0px 50px -11px rgba(0, 0, 0, 0.75);
+  scroll-snap-align: center;
 }
 @media screen and (max-width: 1200px) {
   #packages .package .container .package-container .package-card {
