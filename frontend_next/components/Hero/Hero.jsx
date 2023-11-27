@@ -25,7 +25,7 @@ const Hero = () => {
                 </div>
 
 
-                <Link href='#' className="btn-primary btn-home">
+                <Link href='#packages' className="btn-primary btn-home">
                     <span> </span>
                     <span> </span>
                     <span> </span>

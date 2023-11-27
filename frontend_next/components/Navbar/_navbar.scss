@@ -11,7 +11,7 @@
     .nav-menu-mobile {
         gap: 1.6em;
 
-        @media screen and (max-width: 790px) {
+        @media screen and (max-width: 1000px) {
             display: none;
         }
 
@@ -88,7 +88,7 @@
 
         }
 
-        @media screen and (max-width: 790px) {
+        @media screen and (max-width: 1000px) {
             display: flex;
         }
 
@@ -118,7 +118,7 @@
             top: 0;
         }
 
-        @media screen and (max-width: 790px) {
+        @media screen and (max-width: 1000px) {
             display: flex;
         }
     }

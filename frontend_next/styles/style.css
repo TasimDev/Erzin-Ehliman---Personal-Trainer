@@ -171,7 +171,7 @@ a {
 .nav .nav-menu-mobile {
   gap: 1.6em;
 }
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 1000px) {
   .nav .nav-menu,
   .nav .nav-menu-mobile {
     display: none;
@@ -240,7 +240,7 @@ a {
 .nav .mobile-menu-btn.active span:nth-child(2) {
   display: none;
 }
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 1000px) {
   .nav .mobile-menu-btn {
     display: flex;
   }
@@ -265,7 +265,7 @@ a {
 .nav .nav-menu-mobile.active {
   top: 0;
 }
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 1000px) {
   .nav .nav-menu-mobile {
     display: flex;
   }
@@ -918,9 +918,32 @@ a {
   font-family: var(--Russo);
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 1100px) {
+  #packages .package .title h2 {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  #packages .package .title h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    line-height: 4rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  #packages .package .title h2 {
+    font-size: 2rem;
+    line-height: normal;
+  }
+}
 #packages .package .title .important {
   font-size: 1.2em;
   color: rgb(0, 225, 255);
+}
+@media screen and (max-width: 700px) {
+  #packages .package .title .important {
+    font-size: 1.1rem;
+  }
 }
 #packages .package .title p {
   color: gray;
@@ -933,6 +956,12 @@ a {
 #packages .package .title p span.first {
   color: black;
 }
+@media screen and (max-width: 700px) {
+  #packages .package .title p {
+    font-size: 0.875rem;
+    line-height: 1.4rem;
+  }
+}
 #packages .package .container {
   display: flex;
   flex-direction: column;
@@ -940,15 +969,51 @@ a {
   gap: 3rem;
   overflow: visible;
 }
+@media screen and (max-width: 1200px) {
+  #packages .package .container {
+    padding: 0;
+  }
+}
 #packages .package .container .package-container {
   width: 80%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
   justify-content: space-between;
   gap: 2rem;
-  overflow: visible;
+  overflow: hidden;
+  padding: 3em 2.6em;
+}
+@media screen and (max-width: 1600px) {
+  #packages .package .container .package-container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  #packages .package .container .package-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #packages .package .container .package-container {
+    overflow-x: scroll;
+    scroll-snap-align: center;
+  }
+}
+#packages .package .container .package-container::-webkit-scrollbar {
+  background: transparent;
+  height: 8px;
+}
+#packages .package .container .package-container::-webkit-scrollbar-thumb {
+  background-color: rgba(127, 255, 212, 0.658);
+  border-radius: 25px;
+}
+@media screen and (max-width: 400px) {
+  #packages .package .container .package-container {
+    padding: 2rem 1rem;
+  }
 }
 #packages .package .container .package-container .package-card {
-  width: 28.5714285714%;
+  width: 360px;
   text-align: center;
   padding: 3.2rem 1.6rem;
   display: flex;
@@ -958,13 +1023,35 @@ a {
   gap: 2rem;
   border-radius: 25px;
   cursor: default;
+  scroll-snap-type: none center;
   box-shadow: 1px 0px 50px -11px rgba(0, 0, 0, 0.75);
+}
+@media screen and (max-width: 1200px) {
+  #packages .package .container .package-container .package-card {
+    width: 340px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #packages .package .container .package-container .package-card {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #packages .package .container .package-container .package-card {
+    width: 300px;
+    padding: 1.6rem 1rem;
+  }
 }
 #packages .package .container .package-container .package-card .package-title {
   font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+}
+@media screen and (max-width: 700px) {
+  #packages .package .container .package-container .package-card .package-title {
+    font-size: 1.1rem;
+  }
 }
 #packages .package .container .package-container .package-card .package-title h3 {
   font-size: 2em;
@@ -977,6 +1064,12 @@ a {
   flex-direction: column;
   gap: 0.7rem;
 }
+@media screen and (max-width: 700px) {
+  #packages .package .container .package-container .package-card ul {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+}
 #packages .package .container .package-container .package-card ul span {
   font-weight: 500;
 }
@@ -988,10 +1081,20 @@ a {
   font-size: 2rem;
   font-family: var(--Russo);
 }
+@media screen and (max-width: 700px) {
+  #packages .package .container .package-container .package-card .price {
+    font-size: 1.8rem;
+  }
+}
 #packages .package .container .package-container .package-card a {
   font-size: 1.2rem;
   color: black;
   text-transform: uppercase;
+}
+@media screen and (max-width: 700px) {
+  #packages .package .container .package-container .package-card a {
+    font-size: 1.1rem;
+  }
 }
 #packages .package .container .package-container .package-card.package-third {
   background: rgb(0, 203, 156);
