@@ -29,8 +29,8 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <ul className="nav-menu flex-center">
-                    <li className="nav-link active"><Link href='/'>Начало</Link></li>
-                    <li className="nav-link"><Link href='#packages'>Пакети с тренировки</Link></li>
+                    <li className="nav-link"><Link href='#hero'>Начало</Link></li>
+                    <li className="nav-link active"><Link href='#packages'>Пакети с тренировки</Link></li>
                     <li className="nav-link"><Link href='#calcolator'>Калориен Калколатор</Link></li>
                     <li className="nav-link"><Link href='#about'>Еркин Етем</Link></li>
                     <li className="nav-link"><Link href='#contact'>Свържете се с мен</Link></li>
@@ -42,8 +42,8 @@ const Navbar = () => {
                 </div>
                 <ul className={`nav-menu-mobile ${isOpen ? 'active' : ''}`}>
 
-                    <li className="nav-link active"><Link href='/' onClick={toggleMenu}>Начало</Link></li>
-                    <li className="nav-link"><Link href='#packages' onClick={toggleMenu}>Пакети с тренировки</Link></li>
+                    <li className="nav-link"><Link href='#hero' onClick={toggleMenu}>Начало</Link></li>
+                    <li className="nav-link active"><Link href='#packages' onClick={toggleMenu}>Пакети с тренировки</Link></li>
                     <li className="nav-link"><Link href='#calcolator' onClick={toggleMenu}>Калориен Калколатор</Link></li>
                     <li className="nav-link"><Link href='#about' onClick={toggleMenu}>Еркин Етем</Link></li>
                     <li className="nav-link"><Link href='#contact' onClick={toggleMenu}>Свържете се с мен</Link></li>

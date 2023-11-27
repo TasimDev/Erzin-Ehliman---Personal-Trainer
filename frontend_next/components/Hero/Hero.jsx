@@ -11,7 +11,7 @@ const Hero = () => {
     };
 
     return (
-        <section className="home flex-center ">
+        <section id='hero' className="home flex-center ">
             <div className="home-bg-blur"></div>
             <motion.div
                 initial="hidden"
