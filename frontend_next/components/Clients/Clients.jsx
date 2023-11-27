@@ -8,7 +8,7 @@ const Clients = () => {
       </div>
       <div className="clients-items">
         <div className="client-item">
-          <img src="/assets/trandormation.jpg" alt="tranfprmation" />
+          <img src="/assets/1.jpg" alt="tranfprmation" />
           <div className="info">
             <div className="name">Josh Quote</div>
             <div className="tesominal">
@@ -18,7 +18,7 @@ const Clients = () => {
           </div>
         </div>
         <div className="client-item">
-          <img src="/assets/trandormation.jpg" alt="tranfprmation" />
+          <img src="/assets/2.jpg" alt="tranfprmation" />
           <div className="info">
             <div className="name">Josh Quote</div>
             <div className="tesominal">
@@ -28,7 +28,7 @@ const Clients = () => {
           </div>
         </div>
         <div className="client-item">
-          <img src="/assets/trandormation.jpg" alt="tranfprmation" />
+          <img src="/assets/3.jpg" alt="tranfprmation" />
           <div className="info">
             <div className="name">Josh Quote</div>
             <div className="tesominal">
@@ -38,7 +38,7 @@ const Clients = () => {
           </div>
         </div>
         <div className="client-item">
-          <img src="/assets/trandormation.jpg" alt="tranfprmation" />
+          <img src="/assets/4.jpg" alt="tranfprmation" />
           <div className="info">
             <div className="name">Josh Quote</div>
             <div className="tesominal">

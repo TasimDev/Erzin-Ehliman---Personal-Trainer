@@ -621,7 +621,7 @@ a {
   width: 40%;
   border-radius: 20px;
   height: 100%;
-  overflow: visible;
+  overflow: hidden;
 }
 @media screen and (max-width: 1500px) {
   #clients .clients-items .client-item {
@@ -652,6 +652,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2rem;
+  background: rgba(0, 0, 0, 0.363);
   -webkit-backdrop-filter: blur(13px);
           backdrop-filter: blur(13px);
   width: 100%;
