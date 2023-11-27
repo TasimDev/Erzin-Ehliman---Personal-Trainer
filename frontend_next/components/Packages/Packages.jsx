@@ -11,6 +11,7 @@ const Packages = () => {
             <h2>Пакети с индивидуална тренровка с мен</h2>
             <span className='important'>*Всички пакети включват безплатна консултация*</span>
             <p>Еднократна персонална тренировка - <span className='first'>20лв</span></p>
+            <p>Пакетите са налични за живеещи в Русе</p>
           </div>
           <div className="package-container">
             <div className="package-card package-first">
@@ -116,7 +117,7 @@ const Packages = () => {
                 <li>Изготвяне на КАРДИО план според целта.</li>
                 <li>Онлайн консултация -  без ограничения</li>
                 <li>Безплатна корекция -  без ограничения</li>
-             
+
               </ul>
               <div className="price">450лв.</div>
               <Link href="#">Купи сега</Link>
